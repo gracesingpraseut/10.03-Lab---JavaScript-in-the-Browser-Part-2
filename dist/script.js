@@ -23,7 +23,7 @@ function addBtnClick() {
       addTask(newTask);
       textBox.value = "";
       textBox.focus();
-   }
+   } 
 }
 
 function addTask(taskText) {
