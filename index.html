@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0 16px;
+            color: #111;
+        }
+
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 4px 0 18px 0;
+        }
+
+        .input-row{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        label{
+            margin-right: 6px;
+        }
+
+        input[type="text"]{
+            width: 180px;
+            height: 24px;
+            font-size: 16px;
+            border: 2px solid #333;
+            padding: 2px 4px;
+            box-sizing: border-box;
+            vertical-align: middle;
+            background-color: white;
+        }
+
+        button{
+            font-size: 16px;
+            height: 28px;
+            padding: 0 10px;
+            margin-left: 6px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        ol{
+            margin: 0 0 0 30px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        li{
+            margin: 14px 0;
+        }
+
+        .task-text{
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+        }
+
+        .done-btn{
+            border: none;
+            background: none;
+            font-size: 18px;
+            color: #888;
+            padding: 0;
+            margin-left: 6px;
+            line-height: 1;
+            vertical-align: top;
+            width: 18px;
+        }
+
+        .done-btn:hover{
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+
+    <div class="input-row">
+        <label for="newTask">New task:</label>
+        <input type="text" id="newTask">
+        <button id="addButton">Add</button>
+    </div>
+
+    <ol id="taskList">
+        <li>
+            <span class="task-text">Clean bathroom</span>
+            <button class="done-btn">&#10006;</button>
+        </li>
+
+        <li>
+            <span class="task-text">Study for big exam</span>
+            <button class="done-btn">&#10006;</button>
+        </li>
+
+        <li>
+            <span class="task-text">Feed fish</span>
+            <button class="done-btn">&#10006;</button>
+        </li>
+    </ol>
+</body>
+</html>
